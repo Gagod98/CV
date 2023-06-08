@@ -1,0 +1,89 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 30vh auto ;
+    grid-template-rows: 15vw 20vw 20vw auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 50px;
+    grid-template-areas: 
+    "header header"
+    "main ."
+    "main ."
+    ". .";
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+    text-align:right;
+    text-align: center;
+}
+
+.header-flex{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.estudios{
+    text-align: start;
+    border: 1px solid white;
+}
+.nombre{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.Imagen-Flex-1{
+    display: flex;
+    height: 200px;
+    width: 120px;
+    border-radius: 100px;
+    border: 2px solid white;
+    align-self: flex-start;
+
+    
+}
+
+.Caja-Flex-1{
+    display: flex;
+    align-content: space-between;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+main{
+    grid-area: main;
+    background-color:  blue;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+aside{
+    background-color:  blue;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+.idiomas{
+    text-align: center;
+    color: blue;
+    
+}
+
+.contacto{
+    background-color: blue;
+    color: white;
+    text-align: start;
+}
+.sobre-mi{
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+}
