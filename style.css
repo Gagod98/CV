@@ -2,21 +2,23 @@
     display: grid;
     grid-template-columns: 30vh auto ;
     grid-template-rows: 15vw 20vw 20vw auto;
+    border:1px solid black;
     margin-left: 10vw;
     margin-right: 10vw;
     gap: 50px;
     grid-template-areas: 
-    "header header"
+    "foto header"
     "main ."
     "main ."
-    ". .";
+    ". footer";
+    
     font-family: Arial, Helvetica, sans-serif;
     
 }
 
 header {
     grid-area: header;
-    background-color: blue;
+    background-color:  rgb(0, 119, 255);
     text-align:right;
     text-align: center;
 }
@@ -39,17 +41,32 @@ header {
     width: 100%;
     color: white;
 }
+.foto{
+    grid-area: foto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.estudiosf{
+    margin-right: 10px;
+    text-align: right;
+
+}
+
 
 .Imagen-Flex-1{
     display: flex;
-    height: 200px;
-    width: 120px;
+    height: 240px;
+    width: 150px;
     border-radius: 100px;
     border: 2px solid white;
-    align-self: flex-start;
-
+    background-image: url(ruta/de/la/imagen.jpg); /* Establece la ruta de la imagen */
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+      background-position: center top; /* Establece la posición de la imagen (centro arriba en este caso) */
+    }
     
-}
+
 
 .Caja-Flex-1{
     display: flex;
@@ -59,31 +76,49 @@ header {
 }
 main{
     grid-area: main;
-    background-color:  blue;
+    background-color:  rgb(0, 119, 255);
     border-radius: 20px;
     text-align: center;
     color: white;
 }
 
 aside{
-    background-color:  blue;
+    background-color:  rgb(0, 119, 255);
     border-radius: 20px;
     text-align: center;
     color: white;
+    height: fit-content;
 }
 .idiomas{
     text-align: center;
-    color: blue;
+    color:  rgb(0, 119, 255);
     
 }
 
+.xplab{
+    border-bottom: 1px solid rgb(0, 119, 255) ;
+    color: rgb(0, 119, 255);
+}
 .contacto{
-    background-color: blue;
+    background-color:  rgb(0, 119, 255);
     color: white;
     text-align: start;
+    border-radius: 20px ;
 }
+
 .sobre-mi{
     color: white;
     border-bottom: 1px solid white;
-    font-size: 30px;
+    height: 50px
 }
+
+.idiomas{
+    border-bottom: 1px solid rgb(0, 119, 255) ;
+    color: rgb(0, 119, 255);
+    align-items: center;
+}
+
+.colorfont{
+    color: rgb(0, 119, 255);
+}
+
