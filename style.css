@@ -1,20 +1,4 @@
-.contenedor-grid{
-    display: grid;
-    grid-template-columns: 30vh auto ;
-    grid-template-rows: 15vw 20vw 20vw auto;
-    border:1px solid black;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    gap: 50px;
-    grid-template-areas: 
-    "foto header"
-    "main ."
-    "main ."
-    ". footer";
-    
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+
 
 header {
     grid-area: header;
