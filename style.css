@@ -1,108 +1,48 @@
+body {
+    background-color: rgb(65, 65, 65);
+}
+.my-atropos {
+    width: 160px;
+    height: 290px;
+  
+  }
 
+
+.fImage {
+    width: 100%;
+    height: 50%;
+   
+
+}
 
 header {
-    grid-area: header;
-    background-color:  rgb(0, 119, 255);
-    text-align:right;
-    text-align: center;
-}
-
-.header-flex{
-    display:flex;
-    flex-wrap: wrap;
-    width:100%;
-}
-
-.estudios{
-    text-align: start;
-    border: 1px solid white;
-}
-.nombre{
     display: flex;
-    flex-wrap: wrap;
-    align-self: center;
+    width: auto;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw; 
+}
+
+.flexer {
+    display: flex;
+    align-content: center;
     justify-content: center;
-    width: 100%;
-    color: white;
 }
-.foto{
-    grid-area: foto;
+
+.ShBorder {
+border: 2px solid black;
+}
+
+.muestra{
+    width: 90%;
+    height: 400px;
+}
+ 
+main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-
-.estudiosf{
-    margin-right: 10px;
-    text-align: right;
-
-}
-
-
-.Imagen-Flex-1{
-    display: flex;
-    height: 240px;
-    width: 150px;
-    border-radius: 100px;
-    border: 2px solid white;
-    background-image: url(ruta/de/la/imagen.jpg); /* Establece la ruta de la imagen */
-      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-      background-position: center top; /* Establece la posición de la imagen (centro arriba en este caso) */
-    }
-    
-
-
-.Caja-Flex-1{
-    display: flex;
-    align-content: space-between;
-    padding-left: 50px;
-    padding-top: 10px;
-}
-main{
-    grid-area: main;
-    background-color:  rgb(0, 119, 255);
-    border-radius: 20px;
-    text-align: center;
-    color: white;
-}
-
-aside{
-    background-color:  rgb(0, 119, 255);
-    border-radius: 20px;
-    text-align: center;
-    color: white;
-    height: fit-content;
-}
-.idiomas{
-    text-align: center;
-    color:  rgb(0, 119, 255);
-    
-}
-
-.xplab{
-    border-bottom: 1px solid rgb(0, 119, 255) ;
-    color: rgb(0, 119, 255);
-}
-.contacto{
-    background-color:  rgb(0, 119, 255);
-    color: white;
-    text-align: start;
-    border-radius: 20px ;
-}
-
-.sobre-mi{
-    color: white;
-    border-bottom: 1px solid white;
-    height: 50px
-}
-
-.idiomas{
-    border-bottom: 1px solid rgb(0, 119, 255) ;
-    color: rgb(0, 119, 255);
-    align-items: center;
-}
-
-.colorfont{
-    color: rgb(0, 119, 255);
+    width: auto;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
